@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Landing from "./components/Landing/Landing";
+import { fetchExercises } from "./utils/excercisesUtils";
+import SplashScreen from "./components/SplashScreen/SplashScreen";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Botoooooooon
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default function App() {
+  const [exercises, setExercises] = useState([]);
+  const [showSplash, setShowSplash] = useState(true);
+  useEffect(() => {
+    fetchExercises().then(data => {
+      setExercises(data)});
+  }, []);
+  if (showSplash) {
+    return <SplashScreen onFinish={() => setShowSplash(false)} />;
+  }
+  return <Landing exercises={exercises} />;
 }
-
-export default App;
