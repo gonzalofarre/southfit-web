@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/southfit-web/static/css/main.e6c13ad2.css",
-    "main.js": "/southfit-web/static/js/main.0e69dc43.js",
+    "main.js": "/southfit-web/static/js/main.97c8791d.js",
     "static/js/453.ebcf6661.chunk.js": "/southfit-web/static/js/453.ebcf6661.chunk.js",
     "static/media/southfit-logo.png": "/southfit-web/static/media/southfit-logo.e5e46be8f9e297724463.png",
     "static/media/southfit-logo-empty.png": "/southfit-web/static/media/southfit-logo-empty.f6c0b2b218642567b1c5.png",
     "index.html": "/southfit-web/index.html",
     "main.e6c13ad2.css.map": "/southfit-web/static/css/main.e6c13ad2.css.map",
-    "main.0e69dc43.js.map": "/southfit-web/static/js/main.0e69dc43.js.map",
+    "main.97c8791d.js.map": "/southfit-web/static/js/main.97c8791d.js.map",
     "453.ebcf6661.chunk.js.map": "/southfit-web/static/js/453.ebcf6661.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.0e69dc43.js"
+    "static/js/main.97c8791d.js"
   ]
 }
